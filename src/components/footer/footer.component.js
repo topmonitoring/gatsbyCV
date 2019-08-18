@@ -1,12 +1,7 @@
 import React from "react"
-
+import "./footer.component"
 const Footer = () => (
-  <footer
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <footer className="footer">
     © {new Date().getFullYear()}, Built with
     {` `}
     <a href="https://www.gatsbyjs.org">Gatsby</a>
