@@ -1,13 +1,12 @@
 import React from "react"
 import "./video-baground-styles.scss"
-import VideoBar from "../../assets/laptop02.mp4"
-import VideoBar1 from "../../assets/laptop03.mp4"
+import VideoBgr from "../../assets/laptop02.mp4"
 
 const VideoBaground = () => (
   <div class="v-header container">
     <div className="fullscreen-video-wrap">
       <video autoPlay muted loop>
-        <source src={VideoBar1} type="video/mp4" />
+        <source src={VideoBgr} type="video/mp4" />
       </video>
     </div>
     <div className="header-overlay"></div>
