@@ -6,7 +6,16 @@
   text-decoration: none;
   width: 30%;
   margin: auto;
+  transition: width 2s;
+
+  &:hover {
+    width: 35%;
+  }
+
   @media screen and (max-width: 800px) {
     width: 80%;
+    &:hover {
+      width: 85%;
+    }
   }
 }
