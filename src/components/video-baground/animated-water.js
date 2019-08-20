@@ -8,7 +8,7 @@ const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`
 
 const WaterComponent = () => {
   const [trail, set] = useTrail(5, () => ({
-    xy: [window.innerWidth / 2, window.innerHeight + 400],
+    xy: [0, 0],
 
     config: i => (i === 0 ? fast : slow),
   }))
