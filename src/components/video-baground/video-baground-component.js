@@ -1,8 +1,8 @@
 import React from "react"
 import "./video-baground-styles.scss"
 import VideoBgr from "../../assets/laptop02.mp4"
-import CustomAnimatedButton from "../conteiners/button/animated-button"
-import WaterComponent from "../conteiners/water/animated-water"
+import CustomAnimatedButton from "../button/animated-button"
+import WaterComponent from "./animated-water"
 
 const VideoBaground = () => (
   <div className="v-header container">
@@ -15,13 +15,12 @@ const VideoBaground = () => (
       <WaterComponent />
     </div>
     <div className="header-content text-md-center">
-      <h1>Welcome Everyone</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus
-        perferendis necessitatibus numquam amet impedit explicabo? Debitis quasi
-        ullam aperiam!
-      </p>
+      <h1>Hello, I'm Dobri</h1>
+      <p>Frontend developer</p>
       <CustomAnimatedButton>Find Out More</CustomAnimatedButton>
+      <div className="middle">
+        <div className="mouse" />
+      </div>
     </div>
   </div>
 )

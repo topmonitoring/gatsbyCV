@@ -1,8 +1,9 @@
 import React from "react"
-import CardW from "../../components/conteiners/cards/withContent"
+import CardW from "../../components/cards/withContent"
 
 import "../../sections/sections-global-styles.scss"
 import "./projects.styles.scss"
+import Card from "../../components/cards/flip-card.component"
 
 const ProjectsSection = () => (
   <div className="section">
@@ -15,6 +16,7 @@ const ProjectsSection = () => (
       <CardW className="grid-item" />
       <CardW className="grid-item" />
     </div>
+    <Card style={{ margin: "auto" }} />
     <span>
       SOme Awesome things
       lkasfasjgfjaijjodssssssssssssssssssssssssssssssssssssssssssss dfsrtergeerw
