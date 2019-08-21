@@ -1,3 +1,15 @@
 .about-container {
-  background-color: grey;
+  background-color: rgb(183, 218, 219);
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  border-radius: 25px;
+}
+
+.down-wave {
+  width: 100%;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
