@@ -16,6 +16,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        fieldName: `cms`,
+        url: `https://api-euwest.graphcms.com/v1/cjzlgm5ry2p4d01i7aiaf91pr/master`,
+        typeName: `GraphCMS`,
+        refetchInterval: 10,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

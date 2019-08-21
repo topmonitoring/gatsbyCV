@@ -11,7 +11,7 @@ const ProjectsSection = () => (
     <UpWave />
     <div className="section">
       <div className="section-container">
-        <h1>Chekout my Projects</h1>
+        <h1 className="section-hedder">Chekout my Projects</h1>
         <div className="grid">
           <CardW className="grid-item" />
           <CardW className="grid-item" />

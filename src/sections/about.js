@@ -2,13 +2,16 @@ import React from "react"
 import "../sections/sections-global-styles.scss"
 import BagroundSection from "../components/image2"
 import { DownWave, BigWaveUp } from "../components/wave/wave.component"
+import AboutSectionData from "../components/grafql/about-page-data"
 
 const AboutSection = () => (
   <BagroundSection>
     <div className="section">
       <BigWaveUp />
       <div className="section-container">
-        <h1>About me</h1>
+        <h1 className="section-hedder">About me</h1>
+        <AboutSectionData />
+
         <span>
           SOme Awesome things Contrary to popular belief, Lorem Ipsum is not
           simply random text. It has roots in a piece of classical Latin

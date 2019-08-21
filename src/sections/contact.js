@@ -9,7 +9,7 @@ const ContactSection = () => (
     <div className="section">
       <BigWaveDown />
       <div className="section-container">
-        <h1>Contact me</h1>
+        <h1 className="section-hedder">Contact me</h1>
         <span>
           SOme Awesome things
           lkasfasjgfjaijjodssssssssssssssssssssssssssssssssssssssssssss
