@@ -10,6 +10,7 @@
 .Header_title {
   width: 100%;
   color: black;
+  padding-left: 30px;
 }
 
 .Header_links {
@@ -19,7 +20,6 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-  text-align: center;
 }
 
 .Header_link {

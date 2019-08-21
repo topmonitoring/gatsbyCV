@@ -1,8 +1,7 @@
 import React from "react"
-import "../../sections/sections-global-styles.scss"
-import BagroundSection from "../../components/image2"
-import "./about.styles.scss"
-import { DownWave, BigWaveUp } from "../../components/wave/wave.component"
+import "../sections/sections-global-styles.scss"
+import BagroundSection from "../components/image2"
+import { DownWave, BigWaveUp } from "../components/wave/wave.component"
 
 const AboutSection = () => (
   <BagroundSection>
@@ -31,6 +30,7 @@ const AboutSection = () => (
         </span>
       </div>
     </div>
+
     <DownWave />
   </BagroundSection>
 )

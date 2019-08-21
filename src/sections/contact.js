@@ -1,16 +1,13 @@
 import React from "react"
-import BagroundSection from "../../components/image3"
-import "../../sections/sections-global-styles.scss"
-import {
-  UpWave,
-  DownWave,
-  BigWaveDown,
-} from "../../components/wave/wave.component"
+import BagroundSection from "../components/image3"
+import "../sections/sections-global-styles.scss"
+import { UpWaveReverced, BigWaveDown } from "../components/wave/wave.component"
 
 const ContactSection = () => (
   <BagroundSection>
-    <UpWave />
+    <UpWaveReverced />
     <div className="section">
+      <BigWaveDown />
       <div className="section-container">
         <h1>Contact me</h1>
         <span>
@@ -21,7 +18,6 @@ const ContactSection = () => (
         </span>
       </div>
     </div>
-    <BigWaveDown />
   </BagroundSection>
 )
 export default ContactSection

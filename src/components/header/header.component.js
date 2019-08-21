@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import StickyHeader from "react-sticky-header"
-import { animated, useSpring } from "react-spring"
 
 import "react-sticky-header/styles.css"
 import "./heder.styles.scss"

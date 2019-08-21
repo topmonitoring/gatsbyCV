@@ -40,11 +40,6 @@ const BigWave = ({ className }) => (
       preserveAspectRatio="none"
       fill="lightblue"
       fillOpacity="0.7"
-      style={{
-        position: "absolute",
-        left: "0px",
-        top: "0px",
-      }}
     >
       <path d="M 0 100 Q 165.56 287.759 400 200 Q 634.44 112.241 800 300 L 800 0 L 0 0 L 0 100 Z">
         <animate
@@ -58,5 +53,5 @@ const BigWave = ({ className }) => (
   </div>
 )
 
-export const BigWaveUp = () => <BigWave className={"up-wave"} />
-export const BigWaveDown = () => <BigWave className={"down-wave"} />
+export const BigWaveUp = () => <BigWave className={"up-wave-big"} />
+export const BigWaveDown = () => <BigWave className={"down-wave-big"} />
