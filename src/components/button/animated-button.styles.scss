@@ -7,6 +7,7 @@
   width: 30%;
   margin: auto;
   transition: width 2s;
+  cursor: pointer;
 
   &:hover {
     width: 35%;
@@ -18,4 +19,9 @@
       width: 85%;
     }
   }
+}
+.button-fill {
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
