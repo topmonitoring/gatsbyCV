@@ -1,6 +1,6 @@
 .section {
   align-items: center;
-  min-height: 1000px;
+  height: 1200px;
   width: 100%;
   text-align: center;
 }
@@ -19,6 +19,10 @@
   left: 15%;
   top: 10%;
   border-radius: 25px;
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    left: 5%;
+  }
 }
 
 .about-section-grid {
@@ -28,6 +32,11 @@
     "skils  pic";
   grid-gap: 20px;
   padding: 40px;
+  @media screen and (max-width: 800px) {
+    grid-template-areas:
+      "heder "
+      " pic" "skils ";
+  }
 }
 .heder {
   grid-area: heder;
@@ -42,17 +51,25 @@
   grid-area: pic;
   width: 400px;
   height: 400px;
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .grid {
   margin: auto;
   display: grid;
-  grid-template-areas:
-    "card card card "
-    "card card card";
+  grid-template-areas: "card card card ";
   grid-gap: 50px;
   padding: 50px;
   align-content: center;
+  @media screen and (max-width: 800px) {
+    grid-template-areas: "card card ";
+    grid-gap: 20px;
+    padding: 20px;
+  }
 }
 
 .grid-item {

@@ -20,13 +20,6 @@ const ProjectsSection = () => (
           <CardW className="grid-item" />
           <CardW className="grid-item" />
         </div>
-
-        <span>
-          SOme Awesome things
-          lkasfasjgfjaijjodssssssssssssssssssssssssssssssssssssssssssss
-          dfsrtergeerw uhasudoouijhouip kldasjoijsdao jisdaji isdajoispa
-          ijdsajoijsa iojsdjai oijsadoij jiosasdaas
-        </span>
       </div>
     </div>
     <DownWaveReverced />

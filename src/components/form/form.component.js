@@ -1,8 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { navigate } from "gatsby-link"
 import CustomAnimatedButton from "../button/animated-button"
 import "./form.styles.scss"
-//import SocialMediaLinks from "../social-links/SocialMediaLinks"
 
 function encode(data) {
   return Object.keys(data)
