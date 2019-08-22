@@ -1,0 +1,33 @@
+.form-grid {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name email"
+    "message message"
+    "button button";
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+}
+
+.name-input {
+  grid-area: name;
+  width: 100%;
+}
+.email-input {
+  grid-area: email;
+  width: 100%;
+}
+
+.messege-input {
+  grid-area: message;
+  width: 100%;
+}
+.form-button {
+  grid-area: button;
+}

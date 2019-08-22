@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useSpring, animated } from "react-spring"
 import "./animated-button.styles.scss"
 
-const CustomAnimatedButton = ({ children }) => {
+const CustomAnimatedButton = ({ children, ...OtherProps }) => {
   const [state, toggle] = useState(true)
   const { x } = useSpring({
     from: { x: 0 },
@@ -10,8 +10,9 @@ const CustomAnimatedButton = ({ children }) => {
     config: { duration: 1000 },
   })
   return (
-    <div onClick={() => toggle(!state)}>
+    <div onClick={() => toggle(!state)} {...OtherProps}>
       <animated.div
+        {...OtherProps}
         className="animated-button"
         style={{
           transform: x

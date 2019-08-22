@@ -20,6 +20,30 @@
   top: 10%;
   border-radius: 25px;
 }
+
+.about-section-grid {
+  display: grid;
+  grid-template-areas:
+    "heder blank"
+    "skils  pic";
+  grid-gap: 20px;
+  padding: 40px;
+}
+.heder {
+  grid-area: heder;
+  font-size: 30px;
+}
+.skils {
+  grid-area: skils;
+  text-align: left;
+  margin-left: 5%;
+}
+.pic {
+  grid-area: pic;
+  width: 400px;
+  height: 400px;
+}
+
 .grid {
   margin: auto;
   display: grid;
@@ -34,4 +58,13 @@
 .grid-item {
   grid-area: "card";
   margin: auto;
+}
+.center {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
 }
