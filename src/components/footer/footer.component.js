@@ -1,10 +1,10 @@
 import React from "react"
+import SocialMediaLinks from "../social/social-media-links.component"
 import "./footer.styles.scss"
 const Footer = () => (
   <footer className="footer">
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
+    Created by <a href="https://www.gatsbyjs.org">Dobrin Dobrev</a> ©{" "}
+    {new Date().getFullYear()}
   </footer>
 )
 
