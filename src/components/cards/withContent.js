@@ -4,6 +4,33 @@ import BackgroundImage from "gatsby-background-image"
 import Card from "./animated-card"
 import "./withContent.styles.scss"
 
+const CARDS = [
+  {
+    icon: "fab fa-facebook",
+    link: "https://github.com/",
+  },
+  {
+    icon: "fab fa-instagram",
+    link: "https://instagram.com/",
+  },
+  {
+    icon: "fab fa-twitter",
+    link: "https://twitter.com/",
+  },
+  {
+    icon: "fab fa-discord",
+    link: "https://github.com/",
+  },
+  {
+    icon: "fab fa-linkedin",
+    link: "https://instagram.com/",
+  },
+  {
+    icon: "fab fa-github",
+    link: "https://twitter.com/",
+  },
+]
+
 const CardW = ({ className }) => (
   <StaticQuery
     query={graphql`
@@ -21,20 +48,29 @@ const CardW = ({ className }) => (
       // Set ImageData.
       const imageData = data.placeholderImage.childImageSharp.fluid
       return (
-        <Card>
-          <BackgroundImage
-            style={{ height: "100%", width: "100%" }}
-            Tag="section"
-            className={className}
-            fluid={imageData}
-            backgroundColor={`#040e18`}
-          >
-            <div className="content-container">
-              <h3 className="title">CARD content is here</h3>
-              <div className="link">github link</div>
-            </div>
-          </BackgroundImage>
-        </Card>
+        <>
+          {CARDS.map(({ icon, link }) => (
+            <Card
+              href={link}
+              key={icon}
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <BackgroundImage
+                style={{ height: "100%", width: "100%" }}
+                Tag="section"
+                className={className}
+                fluid={imageData}
+                backgroundColor={`#040e18`}
+              >
+                <div className="content-container">
+                  <h3 className="title">CARD content is here</h3>
+                  <div className="link">github link</div>
+                </div>
+              </BackgroundImage>
+            </Card>
+          ))}
+        </>
       )
     }}
   />

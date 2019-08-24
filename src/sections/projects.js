@@ -1,6 +1,5 @@
 import React from "react"
 import CardW from "../components/cards/withContent"
-
 import "../sections/sections-global-styles.scss"
 
 import BagroundSection from "../components/image1"
@@ -13,11 +12,6 @@ const ProjectsSection = () => (
       <div className="section-container">
         <h1 className="section-hedder">Chekout my Projects</h1>
         <div className="grid">
-          <CardW className="grid-item" />
-          <CardW className="grid-item" />
-          <CardW className="grid-item" />
-          <CardW className="grid-item" />
-          <CardW className="grid-item" />
           <CardW className="grid-item" />
         </div>
       </div>
