@@ -9,7 +9,7 @@ body,
 }
 
 .card {
-  width: 100%;
+  width: 20vw;
   height: 300px;
   background: grey;
   border-radius: 5px;
@@ -20,6 +20,9 @@ body,
   will-change: transform;
   border: 15px solid white;
   margin: auto;
+  @media screen and (max-width: 800px) {
+    width: 35vw;
+  }
 }
 
 .card:hover {

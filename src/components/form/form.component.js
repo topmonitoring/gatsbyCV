@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { navigate } from "gatsby-link"
 import CustomAnimatedButton from "../button/animated-button"
 import "./form.styles.scss"

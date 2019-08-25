@@ -25,7 +25,7 @@ const AboutSection = () => (
       const imgUrl = data.cms.person.personPicture.url
       return (
         <BagroundSection>
-          <div className="section">
+          <div className="section" id="about">
             <BigWaveUp />
             <div className="section-container">
               <h1 className="section-hedder">About me</h1>
