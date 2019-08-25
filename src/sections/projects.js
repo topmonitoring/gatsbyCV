@@ -1,5 +1,5 @@
 import React from "react"
-import CardW from "../components/cards/withContent"
+import CardW from "../components/cards/cards-collection"
 import "../sections/sections-global-styles.scss"
 
 import BagroundSection from "../components/image1"
