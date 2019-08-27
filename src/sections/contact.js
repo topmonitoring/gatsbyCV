@@ -14,21 +14,25 @@ const ContactSection = () => (
         <h1 className="section-hedder">Contact me</h1>
 
         <div className="center">
-          If you are a developer working on some awesome project or a client
-          with hight demands on his/her websites. Don't be shy to reach out we
-          could build somting fantastick together.
+          If you are a developer working on some awesome project and need some
+          help or a client with high demands on his/her websites. Don't be shy
+          to reach out, we could build something fantastic together.
         </div>
 
-        <p>
-          If you want to say hi, have more questions or for colaburations, here
-          is were you can find me:
-        </p>
+        <strong>
+          <p className="condact-details">
+            If you want to say hi, have more questions or for colaburations,
+            here is were you can find me:
+          </p>
+        </strong>
         <SocialMediaLinks />
-
-        <p>Or just fill the form below</p>
+        <strong>
+          <p className="condact-details">Or just fill the form below</p>
+        </strong>
         <FormComponent />
       </div>
     </div>
   </BagroundSection>
 )
+
 export default ContactSection

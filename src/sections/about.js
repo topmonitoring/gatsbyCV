@@ -3,6 +3,7 @@ import "../sections/sections-global-styles.scss"
 import BagroundSection from "../components/image2"
 import { DownWave, BigWaveUp } from "../components/wave/wave.component"
 import { StaticQuery, graphql } from "gatsby"
+import ReactMarkdown from "react-markdown"
 
 const AboutSection = () => (
   <StaticQuery
@@ -32,7 +33,9 @@ const AboutSection = () => (
               <div className="about-section-grid">
                 <h2 className="heder">My name is {name}</h2>
                 <img className="pic" src={imgUrl} alt="profile-img" />
-                <div className="skils">{skils}</div>
+                <div className="skils">
+                  <ReactMarkdown source={skils} />
+                </div>
               </div>
             </div>
           </div>
@@ -44,3 +47,5 @@ const AboutSection = () => (
   />
 )
 export default AboutSection
+
+const input = "# This is a header\n\nAnd this is a paragraph"

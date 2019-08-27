@@ -29,12 +29,12 @@ const getNavList = () => (
   </ul>
 )
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <StickyHeader
     header={
       <>
         <div className="Header_root">
-          <h1 className="Header_title">{siteTitle}</h1>
+          <h1 className="Header_title">Ocean CV</h1>
           {getNavList()}
         </div>
       </>

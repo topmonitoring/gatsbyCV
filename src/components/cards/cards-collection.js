@@ -22,8 +22,7 @@ const CardW = ({ className }) => (
             projectName
             lifePreviewUrl
             githubUrl
-            imgUrl
-            img: projectPicture {
+            img: projectPictureNode {
               url
             }
           }
@@ -38,12 +37,12 @@ const CardW = ({ className }) => (
       return (
         <>
           {PROJECTS.map(
-            ({ id, githubUrl, lifePreviewUrl, projectName, imgUrl }) => (
+            ({ id, githubUrl, lifePreviewUrl, projectName, img: { url } }) => (
               <Card
                 key={id}
                 rel="noreferrer noopener"
                 target="_blank"
-                backgroundImage={imgUrl}
+                backgroundImage={url}
               >
                 <div className="content-container">
                   <h3 className="title">{projectName}</h3>

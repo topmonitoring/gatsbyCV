@@ -17,8 +17,7 @@ const VideoBaground = () => (
         <WaterComponent />
       </div>
       <div className="header-content text-md-center">
-        <h1>Hello, I'm Dobri</h1>
-        <p>Frontend developer</p>
+        <h1>Hello, I'm Dobrin!</h1>
         <CustomAnimatedButton>Find Out More</CustomAnimatedButton>
       </div>
     </div>

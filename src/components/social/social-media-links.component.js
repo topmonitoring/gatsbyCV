@@ -1,47 +1,51 @@
 import React from "react"
-
-const SOCIAL = [
-  {
-    icon: "fab fa-facebook",
-    link: "https://github.com/",
-  },
-  {
-    icon: "fab fa-instagram",
-    link: "https://instagram.com/",
-  },
-  {
-    icon: "fab fa-twitter",
-    link: "https://twitter.com/",
-  },
-  {
-    icon: "fab fa-discord",
-    link: "https://github.com/",
-  },
-  {
-    icon: "fab fa-linkedin",
-    link: "https://instagram.com/",
-  },
-  {
-    icon: "fab fa-github",
-    link: "https://twitter.com/",
-  },
-]
+import { StaticQuery, graphql } from "gatsby"
 
 const SocialMediaLinks = () => (
-  <div>
-    {SOCIAL.map(({ icon, link }) => (
-      <a href={link} key={icon} rel="noreferrer noopener" target="_blank">
-        <i
-          className={icon}
-          alt="link"
-          style={{
-            fontSize: "37px",
-            padding: "10px",
-            color: "black",
-          }}
-        />
-      </a>
-    ))}
-  </div>
+  <StaticQuery
+    query={graphql`
+      query {
+        cms {
+          contactPage(where: { id: "cjzt0fr7q6oiw0971e5b73afr" }) {
+            contactInfo
+            socials {
+              link
+              icon
+            }
+          }
+        }
+      }
+    `}
+    render={data => {
+      const SOCIAL = data.cms.contactPage.socials
+      const contactInfo = data.cms.contactPage
+      console.log(contactInfo)
+      return (
+        <>
+          <div>
+            {SOCIAL.map(({ link, icon }) => (
+              <a
+                href={link}
+                key={icon}
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i
+                  className={icon}
+                  alt="link"
+                  style={{
+                    fontSize: "37px",
+                    padding: "10px",
+                    color: "black",
+                  }}
+                />
+              </a>
+            ))}
+          </div>
+        </>
+      )
+    }}
+  />
 )
+
 export default SocialMediaLinks
