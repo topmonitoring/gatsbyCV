@@ -1,12 +1,14 @@
 import React from "react"
-import "./video-baground-styles.scss"
 import VideoBgr from "../../assets/laptop02.mp4"
-import CustomAnimatedButton from "../button/animated-button"
-import WaterComponent from "./animated-water"
-import { DownWave } from "../wave/wave.component"
+import CustomAnimatedButton from "../../components/button/animated-button"
+import WaterComponent from "../../components/animated-water/animated-water"
+import { DownWave } from "../../components/wave/wave.component"
+
+import "./video-baground-styles.scss"
+import "../sections-global-styles.scss"
 
 const VideoBaground = () => (
-  <>
+  <div className="section" style={{ height: "100vh" }} id="video-bgr">
     <div className="v-header container">
       <div className="fullscreen-video-wrap">
         <video autoPlay muted loop>
@@ -22,7 +24,7 @@ const VideoBaground = () => (
       </div>
     </div>
     <DownWave />
-  </>
+  </div>
 )
 
 export default VideoBaground

@@ -18,7 +18,7 @@ const getNavList = () => (
     <Scrollspy
       currentClassName="active"
       items={NAV_ITEMS.map(item => item.toLowerCase())}
-      offset={-64}
+      offset={0}
     >
       {NAV_ITEMS.map(navItem => (
         <span className="Header_link" key={navItem}>

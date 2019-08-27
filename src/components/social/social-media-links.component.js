@@ -18,7 +18,7 @@ const SocialMediaLinks = () => (
     `}
     render={data => {
       const SOCIAL = data.cms.contactPage.socials
-      const contactInfo = data.cms.contactPage
+      const contactInfo = data.cms.contactPage.contactInfo
       console.log(contactInfo)
       return (
         <>

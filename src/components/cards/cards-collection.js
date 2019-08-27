@@ -1,28 +1,20 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 import Card from "./animated-card"
 
 import "./cards-collection.styles.scss"
 
-const CardW = ({ className }) => (
+const CardW = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "beach-394503_1920.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         cms {
           projects: projectsPages {
             id
             projectName
             lifePreviewUrl
             githubUrl
-            img: projectPictureNode {
+            img: projectPicture {
               url
             }
           }
@@ -30,8 +22,6 @@ const CardW = ({ className }) => (
       }
     `}
     render={data => {
-      // Set ImageData.
-      const imageData = data.placeholderImage.childImageSharp.fluid
       const PROJECTS = data.cms.projects
 
       return (

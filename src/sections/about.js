@@ -47,5 +47,3 @@ const AboutSection = () => (
   />
 )
 export default AboutSection
-
-const input = "# This is a header\n\nAnd this is a paragraph"
