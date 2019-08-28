@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import StickyHeader from "react-sticky-header"
 import AnchorLink from "react-anchor-link-smooth-scroll"
@@ -41,13 +40,5 @@ const Header = () => (
     }
   ></StickyHeader>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

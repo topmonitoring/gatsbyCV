@@ -7,10 +7,10 @@ const Footer = () => (
       Created by{" "}
       <b>
         <a href="https://github.com/topmonitoring" target="blank">
-          Dobrin Dobrev
+          <strong> Dobrin Dobrev</strong>
         </a>
       </b>{" "}
-      © {new Date().getFullYear()} Powerd by <b>Gatsby</b> and <b>GRAFCMS</b>{" "}
+      © {new Date().getFullYear()} Powerd by Gatsby and GRAFCMS{" "}
       <span role="img" aria-label="heart">
         ❤️
       </span>

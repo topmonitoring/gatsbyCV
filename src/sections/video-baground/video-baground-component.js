@@ -3,6 +3,8 @@ import VideoBgr from "../../assets/laptop02.mp4"
 import CustomAnimatedButton from "../../components/button/animated-button"
 import WaterComponent from "../../components/animated-water/animated-water"
 import { DownWave } from "../../components/wave/wave.component"
+import Scrollspy from "react-scrollspy"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import "./video-baground-styles.scss"
 import "../sections-global-styles.scss"
@@ -20,7 +22,12 @@ const VideoBaground = () => (
       </div>
       <div className="header-content text-md-center">
         <h1>Hello, I'm Dobrin!</h1>
-        <CustomAnimatedButton>Find Out More</CustomAnimatedButton>
+
+        <Scrollspy currentClassName="active" items={["about"]} offset={0}>
+          <AnchorLink href={`#about`}>
+            <CustomAnimatedButton>Find Out More</CustomAnimatedButton>
+          </AnchorLink>
+        </Scrollspy>
       </div>
     </div>
     <DownWave />
