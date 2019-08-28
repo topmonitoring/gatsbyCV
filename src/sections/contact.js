@@ -20,7 +20,6 @@ const ContactSection = () => (
     `}
     render={data => {
       const contactInfo = data.cms.contactPage.contactInfo
-      console.log(contactInfo)
       return (
         <BagroundSection>
           <UpWaveReverced />

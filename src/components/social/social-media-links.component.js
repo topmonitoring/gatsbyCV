@@ -7,7 +7,6 @@ const SocialMediaLinks = () => (
       query {
         cms {
           contactPage(where: { id: "cjzt0fr7q6oiw0971e5b73afr" }) {
-            contactInfo
             socials {
               link
               icon
@@ -18,8 +17,6 @@ const SocialMediaLinks = () => (
     `}
     render={data => {
       const SOCIAL = data.cms.contactPage.socials
-      const contactInfo = data.cms.contactPage.contactInfo
-      console.log(contactInfo)
       return (
         <>
           <div>
