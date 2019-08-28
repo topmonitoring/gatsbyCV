@@ -2,6 +2,7 @@ import React from "react"
 import StickyHeader from "react-sticky-header"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
+import SiteLogo from "../../static/trident.js"
 
 import "react-sticky-header/styles.css"
 import "./heder.styles.scss"
@@ -33,7 +34,17 @@ const Header = () => (
     header={
       <>
         <div className="Header_root">
-          <h1 className="Header_title">Ocean CV</h1>
+          <h1 className="Header_title">
+            <Scrollspy
+              currentClassName="active"
+              items={["video-bgr"]}
+              offset={0}
+            >
+              <AnchorLink href={`#video-bgr`}>
+                <SiteLogo />
+              </AnchorLink>
+            </Scrollspy>
+          </h1>
           {getNavList()}
         </div>
       </>

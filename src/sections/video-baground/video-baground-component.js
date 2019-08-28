@@ -1,5 +1,5 @@
 import React from "react"
-import VideoBgr from "../../assets/laptop02.mp4"
+import VideoBgr from "../../static/laptop02.mp4"
 import CustomAnimatedButton from "../../components/button/animated-button"
 import WaterComponent from "../../components/animated-water/animated-water"
 import { DownWave } from "../../components/wave/wave.component"
@@ -22,7 +22,6 @@ const VideoBaground = () => (
       </div>
       <div className="header-content text-md-center">
         <h1>Hello, I'm Dobrin!</h1>
-
         <Scrollspy currentClassName="active" items={["about"]} offset={0}>
           <AnchorLink href={`#about`}>
             <CustomAnimatedButton>Find Out More</CustomAnimatedButton>
