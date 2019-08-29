@@ -1,5 +1,5 @@
 require("dotenv").config()
-const { ANALYTICS_ID } = process.env
+const { ANALYTICS_ID, GRAFCMS_API } = process.env
 
 module.exports = {
   siteMetadata: {
@@ -28,7 +28,7 @@ module.exports = {
       resolve: `gatsby-source-graphql`,
       options: {
         fieldName: `cms`,
-        url: `https://api-euwest.graphcms.com/v1/cjzlgm5ry2p4d01i7aiaf91pr/master`,
+        url: GRAFCMS_API,
         typeName: `GraphCMS`,
         refetchInterval: 10,
       },
