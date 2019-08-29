@@ -6,6 +6,7 @@ import FormComponent from "../components/form/form.component"
 import SocialMediaLinks from "../components/social/social-media-links.component"
 import { StaticQuery, graphql } from "gatsby"
 import ReactMarkdown from "react-markdown"
+import SiteLogo from "../static/trident"
 
 const ContactSection = () => (
   <StaticQuery
@@ -31,6 +32,7 @@ const ContactSection = () => (
               <div className="center">
                 <ReactMarkdown source={contactInfo} />
               </div>
+              <SiteLogo />
               <hr style={{ width: "60%" }} />
               <strong>
                 <p className="condact-details">

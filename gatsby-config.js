@@ -1,3 +1,6 @@
+require("dotenv").config()
+const { ANALYTICS_ID } = process.env
+
 module.exports = {
   siteMetadata: {
     title: `Trident by Dobrin Dobrev`,
@@ -5,6 +8,12 @@ module.exports = {
     author: `@iamdobri`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: ANALYTICS_ID,
+      },
+    },
     "gatsby-background-image",
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
