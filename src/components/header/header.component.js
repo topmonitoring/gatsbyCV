@@ -14,19 +14,18 @@ const getNavAnchorLink = item => (
 )
 
 const getNavList = () => (
-  <ul className="Header_links">
-    <Scrollspy
-      currentClassName="active"
-      items={NAV_ITEMS.map(item => item.toLowerCase())}
-      offset={0}
-    >
-      {NAV_ITEMS.map(navItem => (
-        <span className="Header_link" key={navItem}>
-          {getNavAnchorLink(navItem)}
-        </span>
-      ))}
-    </Scrollspy>
-  </ul>
+  <Scrollspy
+    className="Header_links"
+    currentClassName="active"
+    items={NAV_ITEMS.map(item => item.toLowerCase())}
+    offset={0}
+  >
+    {NAV_ITEMS.map(navItem => (
+      <li className="Header_link" key={navItem}>
+        {getNavAnchorLink(navItem)}
+      </li>
+    ))}
+  </Scrollspy>
 )
 
 const Header = () => (
@@ -35,14 +34,15 @@ const Header = () => (
       <>
         <div className="Header_root">
           <h1 className="Header_title">
-            <Scrollspy
-              currentClassName="active"
-              items={["video-bgr"]}
-              offset={0}
-            >
-              <AnchorLink href={`#video-bgr`}>
-                <SiteLogo />
-              </AnchorLink>
+            <Scrollspy items={["video-bgr"]} offset={0}>
+              <li className="icon_link">
+                <AnchorLink
+                  href={`#video-bgr`}
+                  aria-label="back to the top of the page link"
+                >
+                  <SiteLogo />
+                </AnchorLink>
+              </li>
             </Scrollspy>
           </h1>
           {getNavList()}

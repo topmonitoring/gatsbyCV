@@ -21,28 +21,30 @@
 }
 
 .Header_links {
-  list-style: none;
   margin: auto;
   padding: 0;
-  display: flex;
-  flex-direction: row;
   align-content: center;
+  white-space: nowrap;
+}
+.icon_link {
+  display: block;
+  margin-left: -25px;
 }
 
 .Header_link {
   font-size: 22px;
   margin: 0 2.75em;
-  margin-top: 10px;
+
   font-weight: 900;
+  display: inline;
   a {
     text-decoration: none;
-    opacity: 0.7;
+
     color: white;
   }
 
   &.active {
     a {
-      opacity: 1;
       font-size: 28px;
       color: black;
     }

@@ -57,7 +57,8 @@ export default class FormComponent extends React.Component {
 
             <input
               className="name-input"
-              type={"text"}
+              aria-label="name input"
+              type="text"
               name={"name"}
               onChange={this.handleChange}
               id={"name"}
@@ -67,7 +68,8 @@ export default class FormComponent extends React.Component {
 
             <input
               className="email-input"
-              type={"email"}
+              aria-label="email input"
+              type="email"
               name={"email"}
               onChange={this.handleChange}
               id={"email"}
@@ -76,6 +78,8 @@ export default class FormComponent extends React.Component {
             />
 
             <textarea
+              type="text"
+              aria-label="message input"
               className="messege-input"
               name={"message"}
               onChange={this.handleChange}

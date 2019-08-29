@@ -6,7 +6,7 @@
 }
 
 .section-hedder {
-  color: white;
+  color: black;
   font-size: 36px;
 }
 
@@ -40,7 +40,7 @@
 }
 .heder {
   grid-area: heder;
-  font-size: 30px;
+  font-size: 40px;
 }
 .skils {
   grid-area: skils;
@@ -51,8 +51,8 @@
 }
 .pic {
   grid-area: pic;
-  width: 400px;
-  height: 400px;
+  width: 400;
+  height: 400;
   margin: auto;
   @media screen and (max-width: 800px) {
     width: 200px;

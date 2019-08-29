@@ -23,9 +23,11 @@ const VideoBaground = () => (
       <div className="header-content text-md-center">
         <h1>Hello, I'm Dobrin!</h1>
         <Scrollspy currentClassName="active" items={["about"]} offset={0}>
-          <AnchorLink href={`#about`}>
-            <CustomAnimatedButton>Find Out More</CustomAnimatedButton>
-          </AnchorLink>
+          <li style={{ display: "block" }}>
+            <AnchorLink href={`#about`}>
+              <CustomAnimatedButton>Find Out More</CustomAnimatedButton>
+            </AnchorLink>
+          </li>
         </Scrollspy>
       </div>
     </div>

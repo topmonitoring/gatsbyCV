@@ -26,6 +26,7 @@ const SocialMediaLinks = () => (
                 key={icon}
                 rel="noreferrer noopener"
                 target="_blank"
+                aria-label="link to social media"
               >
                 <i
                   className={icon}

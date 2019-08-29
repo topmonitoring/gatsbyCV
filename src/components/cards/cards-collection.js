@@ -41,6 +41,7 @@ const CardW = () => (
                       href={lifePreviewUrl}
                       rel="noreferrer noopener"
                       target="_blank"
+                      aria-label="life preview link to the project"
                     >
                       <i
                         className="fab fa-chrome icon tooltip"
@@ -53,6 +54,7 @@ const CardW = () => (
                       href={githubUrl}
                       rel="noreferrer noopener"
                       target="_blank"
+                      aria-label="github link to the project"
                     >
                       <i
                         className="fab fa-github icon tooltip"
