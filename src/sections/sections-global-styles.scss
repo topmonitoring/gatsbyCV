@@ -12,16 +12,16 @@
 
 .section-container {
   background-color: rgb(183, 218, 219);
-  width: 70%;
+  width: 70vw;
   height: 80%;
   margin: auto;
   position: absolute;
-  left: 15%;
+  left: 15vw;
   top: 10%;
   border-radius: 25px;
   @media screen and (max-width: 800px) {
-    width: 90%;
-    left: 5%;
+    width: 90vw;
+    left: 5vw;
   }
 }
 
@@ -36,11 +36,15 @@
     grid-template-areas:
       "heder "
       " pic" "skils ";
+    padding: 0px;
   }
 }
 .heder {
   grid-area: heder;
   font-size: 40px;
+  @media screen and (max-width: 800px) {
+    font-size: 24px;
+  }
 }
 .skils {
   grid-area: skils;
@@ -48,6 +52,10 @@
   margin-left: 5%;
   font-size: 24px;
   width: 100%;
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+    width: 90%;
+  }
 }
 .pic {
   grid-area: pic;
@@ -68,7 +76,7 @@
   padding: 50px;
   align-content: center;
   @media screen and (max-width: 800px) {
-    grid-template-areas: "card card ";
+    grid-template-areas: "card ";
     grid-gap: 20px;
     padding: 20px;
   }
@@ -78,7 +86,7 @@
   grid-area: "card";
   margin: auto;
 }
-.center {
+.contact-info {
   text-align: center;
   margin: auto;
   width: 60%;
@@ -86,6 +94,7 @@
   font-size: 20px;
   @media screen and (max-width: 800px) {
     width: 90%;
+    font-size: 16px;
   }
 }
 .condact-details {

@@ -29,7 +29,7 @@ const ContactSection = () => (
             <div className="section-container">
               <h1 className="section-hedder">Contact me</h1>
 
-              <div className="center">
+              <div className="contact-info">
                 <ReactMarkdown source={contactInfo} />
               </div>
               <SiteLogo />
