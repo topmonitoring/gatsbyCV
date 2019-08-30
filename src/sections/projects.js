@@ -8,7 +8,7 @@ import { UpWave, DownWaveReverced } from "../components/wave/wave.component"
 const ProjectsSection = () => (
   <BagroundSection>
     <UpWave />
-    <div className="section" id="projects">
+    <div className="section projects-responsive-height" id="projects">
       <div className="section-container">
         <h1 className="section-hedder">Chekout my Projects</h1>
         <div className="grid">

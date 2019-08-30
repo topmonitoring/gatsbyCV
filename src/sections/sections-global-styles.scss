@@ -100,3 +100,9 @@
 .condact-details {
   font-size: 20px;
 }
+
+.projects-responsive-height {
+  @media screen and (max-width: 800px) {
+    height: 1400px;
+  }
+}
