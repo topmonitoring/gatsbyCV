@@ -6,6 +6,13 @@ module.exports = {
     title: `Trident by Dobrin Dobrev`,
     description: `Hi there!!! My name is Dobrin Dobrev and I am a web developer, freelancer, and open source contributor. This is my personal site where you can see my latest projects, skills and what I'm up to. If you are starting a business and need some help with your website don't hesitate to contact me. I specialize in creating static websites which are super fast and easy to use with amazing designs, SEO friendly, work great on mobile and come with  FREE HOSTING by Netlify.`,
     author: `@iamdobri`,
+    keywords: [
+      "Dobrin",
+      "Dobrin Dobrev",
+      "developer",
+      "freelancer",
+      "programmer",
+    ],
   },
   plugins: [
     {
