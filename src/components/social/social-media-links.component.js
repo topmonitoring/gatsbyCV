@@ -1,7 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import "./social-media-links.styles.scss"
 
-const SocialMediaLinks = () => (
+const SocialMediaLinks = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -28,15 +29,7 @@ const SocialMediaLinks = () => (
                 target="_blank"
                 aria-label="link to social media"
               >
-                <i
-                  className={icon}
-                  alt="link"
-                  style={{
-                    fontSize: "37px",
-                    padding: "10px",
-                    color: "black",
-                  }}
-                />
+                <i className={`${icon} ${className}`} alt="link" />
               </a>
             ))}
           </div>
@@ -46,4 +39,9 @@ const SocialMediaLinks = () => (
   />
 )
 
-export default SocialMediaLinks
+export const SocialMediaLinksContact = () => (
+  <SocialMediaLinks className={"contact-icon"} />
+)
+export const SocialMediaLinksFooter = () => (
+  <SocialMediaLinks className={"footer-icon"} />
+)

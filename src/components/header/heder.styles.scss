@@ -18,51 +18,13 @@
   padding-left: 30px;
   font-size: 30px;
   margin: 0px;
+  align-items: left;
 }
 
-.Header_links {
-  margin: auto;
-  padding: 0;
-  align-content: center;
-  white-space: nowrap;
-}
 .icon_link {
   display: block;
-  margin-left: -25px;
-  margin-top: -15px;
-  margin-bottom: -5px;
-
-  @media screen and (max-width: 800px) {
-    width: 25px;
-    height: 25px;
-    margin-top: -25px;
-    margin-left: -55px;
-  }
-}
-
-.Header_link {
-  font-size: 22px;
-  margin: 0 2.75em;
-
-  font-weight: 900;
-  display: inline;
-  a {
-    text-decoration: none;
-
-    color: white;
-  }
-
-  &.active {
-    a {
-      font-size: 28px;
-      color: black;
-      @media screen and (max-width: 800px) {
-        font-size: 24px;
-      }
-    }
-  }
-  @media screen and (max-width: 800px) {
-    font-size: 18px;
-    margin: 10px;
-  }
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 50px;
 }

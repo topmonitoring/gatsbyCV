@@ -1,0 +1,42 @@
+.Header_links {
+  margin: auto;
+  padding: 0;
+  align-content: center;
+  white-space: nowrap;
+}
+.Header_link {
+  font-size: 22px;
+  margin: 0 2.75em;
+  font-weight: 900;
+  display: inline;
+  a {
+    text-decoration: none;
+
+    color: white;
+  }
+
+  &.active {
+    a {
+      font-size: 28px;
+      color: black;
+      @media screen and (max-width: 800px) {
+        font-size: 24px;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+
+.footer_link {
+  display: flex;
+  font-size: 18px;
+  margin-left: 0px;
+  align-content: flex-start;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}

@@ -1,11 +1,39 @@
 .footer {
-  text-align: center;
   align-content: center;
   fill-opacity: "0.7";
   background-color: lightblue;
 }
-.footer-container {
+.footer-end {
+  text-align: center;
   margin: auto;
   font-size: 16px;
-  font-family: "Bangers", cursive;
+  font-weight: bold;
+}
+.footer-grid {
+  margin: auto;
+  display: grid;
+  grid-template-areas: "info socials links ";
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 50px;
+  padding: 0px 50px 20px;
+  align-content: center;
+  @media screen and (max-width: 800px) {
+    grid-gap: 20px;
+    padding: 20px;
+    h2 {
+      font-size: 15px;
+    }
+  }
+}
+.info {
+  grid-area: info;
+}
+.socials {
+  grid-area: socials;
+  div {
+    width: 20px;
+  }
+}
+.links {
+  grid-area: links;
 }

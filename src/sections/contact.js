@@ -3,7 +3,7 @@ import BagroundSection from "../components/image3"
 import "../sections/sections-global-styles.scss"
 import { UpWaveReverced, BigWaveDown } from "../components/wave/wave.component"
 import FormComponent from "../components/form/form.component"
-import SocialMediaLinks from "../components/social/social-media-links.component"
+import { SocialMediaLinksContact } from "../components/social/social-media-links.component"
 import { StaticQuery, graphql } from "gatsby"
 import ReactMarkdown from "react-markdown"
 import SiteLogo from "../static/trident"
@@ -40,7 +40,7 @@ const ContactSection = () => (
                   colaburations, here is were you can find me:
                 </p>
               </strong>
-              <SocialMediaLinks />
+              <SocialMediaLinksContact />
               <strong>
                 <p className="condact-details">Or just fill the form below</p>
               </strong>
