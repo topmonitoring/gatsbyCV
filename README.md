@@ -16,7 +16,7 @@ This is my personal website made with gatsby includes:
 - google fonts
 
 ## Lighthouse audit
-![lithouse](https://imgur.com/oPsH1lj)
+![lithouse](https://media.graphcms.com/PZUnVAYsTPWCOcylbIC9)
 
 
 ## 🎓 Learning Gatsby
