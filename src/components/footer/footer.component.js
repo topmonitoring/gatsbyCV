@@ -1,6 +1,7 @@
 import React from "react"
 import { SocialMediaLinksFooter } from "../social/social-media-links.component"
 import { NavListFooter } from "../navigation/navigation.component"
+import PayPalButton from "../paypal/paypal-button.component"
 
 import "./footer.styles.scss"
 const Footer = () => (
@@ -8,13 +9,15 @@ const Footer = () => (
     <div className="footer-grid">
       <div className="info">
         <h3>ABOUT THIS SITE</h3>
-        <span>This site source code is avaliable on github here.</span>
-        <br />
         <span>
-          This site source code is available on GitHub here. Follow the GitHub
-          link to see all the technologies behind this project and how to set it
-          up for yourself. Creating beautiful sites take a lot of time and
-          effort, feel free to donate to my hard work here.
+          This site source code is available on GitHub{" "}
+          <a href="https://github.com/topmonitoring/gatsbyCV" target="blank">
+            here
+          </a>
+          . Follow the GitHub link to see all the technologies behind this
+          project and how to set it up for yourself. Creating beautiful sites
+          take a lot of time and effort, feel free to donate to my hard work
+          here. <PayPalButton />
         </span>
       </div>
       <div className="socials">
