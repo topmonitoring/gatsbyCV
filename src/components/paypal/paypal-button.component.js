@@ -17,13 +17,6 @@ const PayPalButton = () => (
         title="PayPal - The safer, easier way to pay online!"
         alt="Donate with PayPal button"
       />
-      <img
-        alt=""
-        border="0"
-        src="https://www.paypal.com/en_BG/i/scr/pixel.gif"
-        width="1"
-        height="1"
-      />
     </form>
   </>
 )

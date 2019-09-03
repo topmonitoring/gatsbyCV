@@ -10,14 +10,18 @@ const Footer = () => (
       <div className="info">
         <h3>ABOUT THIS SITE</h3>
         <span>
-          This site source code is available on GitHub{" "}
-          <a href="https://github.com/topmonitoring/gatsbyCV" target="blank">
-            here
+          This site source code is available on{" "}
+          <a
+            href="https://github.com/topmonitoring/gatsbyCV"
+            title="github link"
+            target="blank"
+          >
+            GitHub
           </a>
-          . Follow the GitHub link to see all the technologies behind this
-          project and how to set it up for yourself. Creating beautiful sites
-          take a lot of time and effort, feel free to donate to my hard work
-          here. <PayPalButton />
+          . Follow the link to see all the technologies behind this project and
+          how to set it up for yourself. Creating beautiful sites take a lot of
+          time and effort, feel free to donate to my hard work here.{" "}
+          <PayPalButton />
         </span>
       </div>
       <div className="socials">
