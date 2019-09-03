@@ -11,9 +11,10 @@ const Footer = () => (
         <span>This site source code is avaliable on github here.</span>
         <br />
         <span>
-          Follow the github link to see all the tehnologies behind this site and
-          how to set it up for yourself.These sites take a lot of effort, feel
-          free to donate to my hard work here.
+          This site source code is available on GitHub here. Follow the GitHub
+          link to see all the technologies behind this project and how to set it
+          up for yourself. Creating beautiful sites take a lot of time and
+          effort, feel free to donate to my hard work here.
         </span>
       </div>
       <div className="socials">

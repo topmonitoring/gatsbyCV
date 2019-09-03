@@ -1,14 +1,21 @@
 import React from "react"
 import "../sections/sections-global-styles.scss"
-import BagroundSection from "../components/image2"
 import { DownWave, BigWaveUp } from "../components/wave/wave.component"
 import { StaticQuery, graphql } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import ReactMarkdown from "react-markdown"
 
-const AboutSection = () => (
+const AboutSection = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
+        bagroundImage: file(relativePath: { eq: "sea-2562563_1920.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920, maxHeight: 1080) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         cms {
           person: aboutPage(where: { id: "cjzlhopm422ju0959jlgabhi0" }) {
             personName
@@ -21,11 +28,18 @@ const AboutSection = () => (
       }
     `}
     render={data => {
+      const backgroundImg = data.bagroundImage.childImageSharp.fluid
       const name = data.cms.person.personName
       const skils = data.cms.person.personSkillsMd
       const imgUrl = data.cms.person.personPicture.url
       return (
-        <BagroundSection>
+        <BackgroundImage
+          style={{ height: "100%", width: "100%" }}
+          Tag="section"
+          className={className}
+          fluid={backgroundImg}
+          backgroundColor={`#040e18`}
+        >
           <div className="section" id="about">
             <BigWaveUp />
             <div className="section-container">
@@ -41,7 +55,7 @@ const AboutSection = () => (
           </div>
 
           <DownWave />
-        </BagroundSection>
+        </BackgroundImage>
       )
     }}
   />
