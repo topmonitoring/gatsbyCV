@@ -72,9 +72,7 @@ function SEO({ description, lang, meta, title, keywords }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <script src="https://kit.fontawesome.com/e29a0bf6b9.js"></script>
-    </Helmet>
+    ></Helmet>
   )
 }
 

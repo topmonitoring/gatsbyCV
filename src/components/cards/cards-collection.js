@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Card from "./animated-card"
+import { SocialMediaIconsReact } from "social-media-icons-react"
 
 import "./cards-collection.styles.scss"
 
@@ -38,37 +39,14 @@ const ProjectCardsColection = () => (
                   <h3 className="title">{projectName}</h3>
                   <div className="icons-container">
                     {lifePreviewUrl ? (
-                      <a
-                        href={lifePreviewUrl}
-                        rel="noreferrer noopener"
-                        target="_blank"
-                        aria-label="life preview link to the project"
-                      >
-                        <i
-                          className="fab fa-chrome icon tooltip"
-                          alt="life previw link"
-                        >
-                          <span className="tooltiptext">
-                            {" "}
-                            go to life previw
-                          </span>
-                        </i>
-                      </a>
+                      <SocialIcon href={lifePreviewUrl} iconName="web">
+                        <span className="tooltiptext"> go to life previw</span>
+                      </SocialIcon>
                     ) : null}
                     {githubUrl ? (
-                      <a
-                        href={githubUrl}
-                        rel="noreferrer noopener"
-                        target="_blank"
-                        aria-label="github link to the project"
-                      >
-                        <i
-                          className="fab fa-github icon tooltip"
-                          alt="github link"
-                        >
-                          <span className="tooltiptext">go to Github</span>
-                        </i>
-                      </a>
+                      <SocialIcon href={githubUrl} iconName="github">
+                        <span className="tooltiptext">go to Github</span>
+                      </SocialIcon>
                     ) : null}
                   </div>
                 </div>
@@ -81,3 +59,20 @@ const ProjectCardsColection = () => (
   />
 )
 export default ProjectCardsColection
+
+const SocialIcon = ({ href, iconName }) => (
+  <SocialMediaIconsReact
+    borderColor="rgba(0,0,0,0.25)"
+    iconColor="rgba(255,255,255,1)"
+    backgroundColor="rgba(144, 186, 245,1)"
+    iconSize="5"
+    roundness="50%"
+    size="50"
+    icon={`${iconName}`}
+    url={`${href}`}
+    rel="noreferrer noopener"
+    target="_blank"
+    alt="social link"
+    aria-label="link to the project"
+  />
+)
