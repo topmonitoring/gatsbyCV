@@ -4,6 +4,7 @@ import { DownWave, BigWaveUp } from "../components/wave/wave.component"
 import { StaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import ReactMarkdown from "react-markdown"
+import downloadFile from "../static/Dobrin_Dobrev_-_Javascript_Developer.pdf"
 
 const AboutSection = ({ className }) => (
   <StaticQuery
@@ -49,6 +50,13 @@ const AboutSection = ({ className }) => (
                 <img className="pic" src={imgUrl} alt="profile-img" />
                 <div className="skils">
                   <ReactMarkdown source={skils} />
+                  <p>
+                    Or{" "}
+                    <a href={downloadFile} download>
+                      Download my CV
+                    </a>{" "}
+                    in pdf format
+                  </p>
                 </div>
               </div>
             </div>
